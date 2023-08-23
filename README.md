@@ -2,7 +2,7 @@
 
 A simple todo list application in Vue.js
 
-All code come from [Intro to Vue.js: Build a Todo App](https://www.youtube.com/watch?v=-X2hP9pOVss)
+All code come from [Intro to Vue 3 + Composition API: Build a Todo App](https://www.youtube.com/watch?v=rncY1tlWShM)
 
 For learning purpose.
 
