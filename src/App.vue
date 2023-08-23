@@ -7,6 +7,7 @@
     <form action="">
         <label>New Todo</label>
         <input type="text">
+        <button>Add New Todo</button>
     </form>
 </template>
 
