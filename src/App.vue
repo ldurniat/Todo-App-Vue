@@ -21,7 +21,7 @@ function addNewTodo() {
         <button>Add New Todo</button>
     </form>
 
-    <div v-for="todo in todos">
+    <div v-for="todo in todos" :key="todo.id">
         <h3>{{ todo.content }}</h3>
     </div>
 </template>
