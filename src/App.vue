@@ -14,7 +14,7 @@ function addNewTodo() {
     newTodo.value = '';
 }
 
-function toogleDone(todo) {
+function toggleDone(todo) {
     todo.done = !todo.done
 }
 </script>
@@ -28,7 +28,7 @@ function toogleDone(todo) {
     </form>
     <ul>
         <li v-for="todo in todos" :key="todo.id">
-            <h3 @click="toogleDone(todo)">{{ todo.content }}</h3>
+            <h3 @click="toggleDone(todo)">{{ todo.content }}</h3>
         </li>
     </ul>
     
