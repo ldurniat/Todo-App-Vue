@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 const newTodo = ref('')
+const todos   = ref([])
 
 function addNewTodo() {
     console.log("Send form")
