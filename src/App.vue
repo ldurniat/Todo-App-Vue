@@ -20,10 +20,12 @@ function addNewTodo() {
         <input type="text" v-model="newTodo" name="newTodo">
         <button>Add New Todo</button>
     </form>
-
-    <div v-for="todo in todos" :key="todo.id">
-        <h3>{{ todo.content }}</h3>
-    </div>
+    <ul>
+        <li v-for="todo in todos" :key="todo.id">
+            <h3>{{ todo.content }}</h3>
+        </li>
+    </ul>
+    
 </template>
 
 <style scoped>
