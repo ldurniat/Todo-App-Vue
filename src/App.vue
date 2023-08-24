@@ -28,7 +28,7 @@ function toggleDone(todo) {
     </form>
     <ul>
         <li v-for="todo in todos" :key="todo.id">
-            <h3 @click="toggleDone(todo)">{{ todo.content }}</h3>
+            <h3 :class="{done: todo.done}" @click="toggleDone(todo)">{{ todo.content }}</h3>
         </li>
     </ul>
     
