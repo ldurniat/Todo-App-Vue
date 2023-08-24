@@ -10,6 +10,8 @@ function addNewTodo() {
         done   : false,
         content: newTodo.value
     })
+    // Clear input 
+    newTodo.value = '';
 }
 </script>
 
