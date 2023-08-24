@@ -19,6 +19,10 @@ function addNewTodo() {
         <input type="text" v-model="newTodo" name="newTodo">
         <button>Add New Todo</button>
     </form>
+
+    <div v-for="todo in todos">
+        <h3>{{ todo.content }}</h3>
+    </div>
 </template>
 
 <style scoped>
