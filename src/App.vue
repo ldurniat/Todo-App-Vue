@@ -13,6 +13,10 @@ function addNewTodo() {
     // Clear input 
     newTodo.value = '';
 }
+
+function toogleDone(todo) {
+    todo.done = !todo.done
+}
 </script>
 
 <template>
