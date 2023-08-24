@@ -6,6 +6,7 @@ const todos   = ref([])
 
 function addNewTodo() {
     todos.value.push({
+        id     : Date.now(),
         done   : false,
         content: newTodo.value
     })
