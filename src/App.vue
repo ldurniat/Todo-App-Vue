@@ -5,7 +5,10 @@ const newTodo = ref('')
 const todos   = ref([])
 
 function addNewTodo() {
-    console.log("Send form")
+    todos.value.push({
+        done   : false,
+        content: newTodo.value
+    })
 }
 </script>
 
