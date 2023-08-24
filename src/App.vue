@@ -24,7 +24,7 @@ function addNewTodo() {
     </form>
     <ul>
         <li v-for="todo in todos" :key="todo.id">
-            <h3>{{ todo.content }}</h3>
+            <h3 @click="toogleDone(todo)">{{ todo.content }}</h3>
         </li>
     </ul>
     
