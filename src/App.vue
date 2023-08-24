@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 
+const newTodo = ref('')
+
 function addNewTodo() {
     console.log("Send form")
 }
