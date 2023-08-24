@@ -1,5 +1,7 @@
 <script setup>
-
+function addNewTodo() {
+    console.log("Send form")
+}
 </script>
 
 <template>
