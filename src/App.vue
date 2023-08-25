@@ -27,6 +27,10 @@ function markAllDone() {
         todo.done = true
     });
 }
+
+function removeAllTodos() {
+    todos.value = []
+}
 </script>
 
 <template>
