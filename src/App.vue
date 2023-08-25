@@ -30,7 +30,7 @@ function removeTodo(index) {
         <input type="text" v-model="newTodo" name="newTodo">
         <button>Add New Todo</button>
     </form>
-    <button>Mark All Done</button>
+    <button @click="markAllDone">Mark All Done</button>
     <ul>
         <li class="todo" v-for="(todo, index)  in todos" :key="todo.id">
             <h3 :class="{done: todo.done}" @click="toggleDone(todo)">{{ todo.content }}</h3>
