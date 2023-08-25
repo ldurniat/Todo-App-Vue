@@ -37,7 +37,7 @@ function markAllDone() {
         <button>Add New Todo</button>
     </form>
     <button @click="markAllDone">Mark All Done</button>
-    <button @click="removeAllDone">Remove All Todos</button>
+    <button @click="removeAllTodos">Remove All Todos</button>
 
     <ul>
         <li class="todo" v-for="(todo, index)  in todos" :key="todo.id">
