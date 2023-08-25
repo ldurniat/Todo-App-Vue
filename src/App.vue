@@ -17,6 +17,10 @@ function addNewTodo() {
 function toggleDone(todo) {
     todo.done = !todo.done
 }
+
+function removeTodo(index) {
+    todos.value.splice(index, 1)
+}
 </script>
 
 <template>
