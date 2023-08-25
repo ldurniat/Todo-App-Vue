@@ -37,6 +37,8 @@ function markAllDone() {
         <button>Add New Todo</button>
     </form>
     <button @click="markAllDone">Mark All Done</button>
+    <button>Remove All Todos</button>
+
     <ul>
         <li class="todo" v-for="(todo, index)  in todos" :key="todo.id">
             <h3 :class="{done: todo.done}" @click="toggleDone(todo)">{{ todo.content }}</h3>
