@@ -21,6 +21,12 @@ function toggleDone(todo) {
 function removeTodo(index) {
     todos.value.splice(index, 1)
 }
+
+function markAllDone() {
+    todos.value.forEach( (todo) => {
+        todo.done = true
+    });
+}
 </script>
 
 <template>
