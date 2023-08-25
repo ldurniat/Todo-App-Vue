@@ -27,7 +27,7 @@ function toggleDone(todo) {
         <button>Add New Todo</button>
     </form>
     <ul>
-        <li v-for="todo in todos" :key="todo.id">
+        <li class="todo" v-for="todo in todos" :key="todo.id">
             <h3 :class="{done: todo.done}" @click="toggleDone(todo)">{{ todo.content }}</h3>
         </li>
     </ul>
@@ -35,6 +35,10 @@ function toggleDone(todo) {
 </template>
 
 <style scoped>
+
+.todo {
+    cursor: pointer;
+}
 .done {
     text-decoration: line-through;
 }
