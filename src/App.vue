@@ -27,7 +27,7 @@ function toggleDone(todo) {
         <button>Add New Todo</button>
     </form>
     <ul>
-        <li class="todo" v-for="todo in todos" :key="todo.id">
+        <li class="todo" v-for="(todo, index)  in todos" :key="todo.id">
             <h3 :class="{done: todo.done}" @click="toggleDone(todo)">{{ todo.content }}</h3>
             <button>Remove Todo</button>
         </li>
